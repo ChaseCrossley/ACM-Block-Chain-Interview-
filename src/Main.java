@@ -7,11 +7,11 @@ public class Main {
         boolean runARace = true;
         while (runARace) {
             Race r = new Race();
-            r.startPolls();
+            r.setQuitStatement();
             r.runPolls();
             System.out.println("Would you like to do another poll?");
             System.out.println("Y/N");
-            runARace = input.next().toLowerCase().equals("N");
+            runARace = input.next().toLowerCase().equals("Y");
         }
     }
 }
